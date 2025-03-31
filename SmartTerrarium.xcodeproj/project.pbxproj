@@ -1,0 +1,930 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8E149A672D067F08009DA208 /* BackendAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E149A662D067F08009DA208 /* BackendAPI.swift */; };
+		8E6E8C2C2D1E8086008C831B /* WaterSchedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E6E8C2B2D1E8086008C831B /* WaterSchedule.swift */; };
+		8E6E8C2E2D1E81D8008C831B /* WaterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E6E8C2D2D1E81D8008C831B /* WaterCell.swift */; };
+		8E6E8C312D1E8F0A008C831B /* FanVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E6E8C302D1E8F0A008C831B /* FanVC.swift */; };
+		8E6E8C332D1FABFF008C831B /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E6E8C322D1FABFF008C831B /* Networking.swift */; };
+		8E6E8C352D1FAC44008C831B /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E6E8C342D1FAC44008C831B /* User.swift */; };
+		8E6E8C372D1FAEA0008C831B /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E6E8C362D1FAEA0008C831B /* AppError.swift */; };
+		8E6E8C392D1FAEEE008C831B /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E6E8C382D1FAEEE008C831B /* HTTPMethod.swift */; };
+		8E6E8C432D206081008C831B /* DGCharts in Frameworks */ = {isa = PBXBuildFile; productRef = 8E6E8C422D206081008C831B /* DGCharts */; };
+		8E6E8C452D219528008C831B /* KeepAliveStatusLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E6E8C442D219528008C831B /* KeepAliveStatusLabel.swift */; };
+		8E6E8C482D2195FD008C831B /* StatusManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E6E8C472D2195FD008C831B /* StatusManager.swift */; };
+		8E9ABDD92CE2554B00282246 /* MainTabBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E9ABDD82CE2554B00282246 /* MainTabBarVC.swift */; };
+		8E9ABDDC2CE2568900282246 /* WateringVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E9ABDDB2CE2568900282246 /* WateringVC.swift */; };
+		8E9ABDDF2CE25B9400282246 /* SettingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E9ABDDE2CE25B9400282246 /* SettingVC.swift */; };
+		8E9ABDE22CE25D4600282246 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E9ABDE12CE25D4600282246 /* ProfileVC.swift */; };
+		8E9ABDE62CE2684800282246 /* HealthCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E9ABDE52CE2684800282246 /* HealthCard.swift */; };
+		8E9ABDEC2CE3C9CD00282246 /* HumidityCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E9ABDEB2CE3C9CD00282246 /* HumidityCard.swift */; };
+		8E9ABDEF2CE3CD9200282246 /* WaterCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E9ABDEE2CE3CD9200282246 /* WaterCard.swift */; };
+		8E9ABDF22CE3CDC200282246 /* AmountWaterCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E9ABDF12CE3CDC200282246 /* AmountWaterCard.swift */; };
+		8EAABDCE2CE6581D000A9775 /* TemperatureCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EAABDCD2CE6581D000A9775 /* TemperatureCard.swift */; };
+		8EAABDD02CE730D6000A9775 /* WateringButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EAABDCF2CE730D6000A9775 /* WateringButton.swift */; };
+		8EABD6192CDFCBF100DA4FF4 /* TerrariumDashboardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EABD6182CDFCBF100DA4FF4 /* TerrariumDashboardVC.swift */; };
+		8EAC06322CD7396A006DC034 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EAC06312CD7396A006DC034 /* AppDelegate.swift */; };
+		8EAC06342CD7396A006DC034 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EAC06332CD7396A006DC034 /* SceneDelegate.swift */; };
+		8EAC06362CD7396A006DC034 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EAC06352CD7396A006DC034 /* ViewController.swift */; };
+		8EAC063B2CD7396B006DC034 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8EAC063A2CD7396B006DC034 /* Assets.xcassets */; };
+		8EAC063E2CD7396B006DC034 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8EAC063C2CD7396B006DC034 /* LaunchScreen.storyboard */; };
+		8EAC06492CD7396B006DC034 /* SmartTerrariumTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EAC06482CD7396B006DC034 /* SmartTerrariumTests.swift */; };
+		8EAC06532CD7396B006DC034 /* SmartTerrariumUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EAC06522CD7396B006DC034 /* SmartTerrariumUITests.swift */; };
+		8EAC06552CD7396B006DC034 /* SmartTerrariumUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EAC06542CD7396B006DC034 /* SmartTerrariumUITestsLaunchTests.swift */; };
+		8EAC06642CD786AE006DC034 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EAC06632CD786AE006DC034 /* LoginVC.swift */; };
+		8EAC06692CD787C8006DC034 /* EButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EAC06682CD787C8006DC034 /* EButton.swift */; };
+		8EAC066C2CD787F7006DC034 /* UsernameTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EAC066B2CD787F7006DC034 /* UsernameTextField.swift */; };
+		8EAC066E2CD78806006DC034 /* PasswordTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EAC066D2CD78806006DC034 /* PasswordTextField.swift */; };
+		8EAC06712CD78A3E006DC034 /* CustomLabel1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EAC06702CD78A3E006DC034 /* CustomLabel1.swift */; };
+		8EAC06742CD78AC3006DC034 /* + UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EAC06732CD78AC3006DC034 /* + UIView.swift */; };
+		8EAC06772CD78B27006DC034 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EAC06762CD78B27006DC034 /* Constants.swift */; };
+		8EAC06792CD78BE7006DC034 /* ChangeMobileButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EAC06782CD78BE7006DC034 /* ChangeMobileButton.swift */; };
+		8EAC067B2CD78C09006DC034 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EAC067A2CD78C09006DC034 /* Strings.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8EAC06452CD7396B006DC034 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8EAC06262CD7396A006DC034 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8EAC062D2CD7396A006DC034;
+			remoteInfo = SmartTerrarium;
+		};
+		8EAC064F2CD7396B006DC034 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8EAC06262CD7396A006DC034 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8EAC062D2CD7396A006DC034;
+			remoteInfo = SmartTerrarium;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8E149A662D067F08009DA208 /* BackendAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackendAPI.swift; sourceTree = "<group>"; };
+		8E6E8C2B2D1E8086008C831B /* WaterSchedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterSchedule.swift; sourceTree = "<group>"; };
+		8E6E8C2D2D1E81D8008C831B /* WaterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterCell.swift; sourceTree = "<group>"; };
+		8E6E8C302D1E8F0A008C831B /* FanVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FanVC.swift; sourceTree = "<group>"; };
+		8E6E8C322D1FABFF008C831B /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
+		8E6E8C342D1FAC44008C831B /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		8E6E8C362D1FAEA0008C831B /* AppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
+		8E6E8C382D1FAEEE008C831B /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		8E6E8C3B2D2057A0008C831B /* Charts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Charts.framework; path = System/Library/Frameworks/Charts.framework; sourceTree = SDKROOT; };
+		8E6E8C442D219528008C831B /* KeepAliveStatusLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeepAliveStatusLabel.swift; sourceTree = "<group>"; };
+		8E6E8C472D2195FD008C831B /* StatusManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusManager.swift; sourceTree = "<group>"; };
+		8E9ABDD82CE2554B00282246 /* MainTabBarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarVC.swift; sourceTree = "<group>"; };
+		8E9ABDDB2CE2568900282246 /* WateringVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WateringVC.swift; sourceTree = "<group>"; };
+		8E9ABDDE2CE25B9400282246 /* SettingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingVC.swift; sourceTree = "<group>"; };
+		8E9ABDE12CE25D4600282246 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
+		8E9ABDE52CE2684800282246 /* HealthCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthCard.swift; sourceTree = "<group>"; };
+		8E9ABDEB2CE3C9CD00282246 /* HumidityCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HumidityCard.swift; sourceTree = "<group>"; };
+		8E9ABDEE2CE3CD9200282246 /* WaterCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterCard.swift; sourceTree = "<group>"; };
+		8E9ABDF12CE3CDC200282246 /* AmountWaterCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmountWaterCard.swift; sourceTree = "<group>"; };
+		8EAABDCD2CE6581D000A9775 /* TemperatureCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemperatureCard.swift; sourceTree = "<group>"; };
+		8EAABDCF2CE730D6000A9775 /* WateringButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WateringButton.swift; sourceTree = "<group>"; };
+		8EABD6182CDFCBF100DA4FF4 /* TerrariumDashboardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TerrariumDashboardVC.swift; sourceTree = "<group>"; };
+		8EAC062E2CD7396A006DC034 /* SmartTerrarium.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartTerrarium.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8EAC06312CD7396A006DC034 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8EAC06332CD7396A006DC034 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		8EAC06352CD7396A006DC034 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8EAC063A2CD7396B006DC034 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8EAC063D2CD7396B006DC034 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8EAC063F2CD7396B006DC034 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8EAC06442CD7396B006DC034 /* SmartTerrariumTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmartTerrariumTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8EAC06482CD7396B006DC034 /* SmartTerrariumTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartTerrariumTests.swift; sourceTree = "<group>"; };
+		8EAC064E2CD7396B006DC034 /* SmartTerrariumUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmartTerrariumUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8EAC06522CD7396B006DC034 /* SmartTerrariumUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartTerrariumUITests.swift; sourceTree = "<group>"; };
+		8EAC06542CD7396B006DC034 /* SmartTerrariumUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartTerrariumUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		8EAC06632CD786AE006DC034 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		8EAC06682CD787C8006DC034 /* EButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EButton.swift; sourceTree = "<group>"; };
+		8EAC066B2CD787F7006DC034 /* UsernameTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsernameTextField.swift; sourceTree = "<group>"; };
+		8EAC066D2CD78806006DC034 /* PasswordTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordTextField.swift; sourceTree = "<group>"; };
+		8EAC06702CD78A3E006DC034 /* CustomLabel1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLabel1.swift; sourceTree = "<group>"; };
+		8EAC06732CD78AC3006DC034 /* + UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "+ UIView.swift"; sourceTree = "<group>"; };
+		8EAC06762CD78B27006DC034 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		8EAC06782CD78BE7006DC034 /* ChangeMobileButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeMobileButton.swift; sourceTree = "<group>"; };
+		8EAC067A2CD78C09006DC034 /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8EAC062B2CD7396A006DC034 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E6E8C432D206081008C831B /* DGCharts in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8EAC06412CD7396B006DC034 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8EAC064B2CD7396B006DC034 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8E149A642D067EB6009DA208 /* NetworkingManager */ = {
+			isa = PBXGroup;
+			children = (
+				8E149A652D067EBE009DA208 /* Model */,
+				8E6E8C322D1FABFF008C831B /* Networking.swift */,
+			);
+			path = NetworkingManager;
+			sourceTree = "<group>";
+		};
+		8E149A652D067EBE009DA208 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8E149A662D067F08009DA208 /* BackendAPI.swift */,
+				8E6E8C342D1FAC44008C831B /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8E6E8C2F2D1E8EE1008C831B /* Fan */ = {
+			isa = PBXGroup;
+			children = (
+				8E6E8C302D1E8F0A008C831B /* FanVC.swift */,
+			);
+			path = Fan;
+			sourceTree = "<group>";
+		};
+		8E6E8C3A2D2057A0008C831B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8E6E8C3B2D2057A0008C831B /* Charts.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8E6E8C462D2195F1008C831B /* StatusManager */ = {
+			isa = PBXGroup;
+			children = (
+				8E6E8C472D2195FD008C831B /* StatusManager.swift */,
+			);
+			path = StatusManager;
+			sourceTree = "<group>";
+		};
+		8E9ABDD72CE2553A00282246 /* MainTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				8E9ABDD82CE2554B00282246 /* MainTabBarVC.swift */,
+			);
+			path = MainTabBar;
+			sourceTree = "<group>";
+		};
+		8E9ABDDA2CE2567100282246 /* Watering */ = {
+			isa = PBXGroup;
+			children = (
+				8E9ABDDB2CE2568900282246 /* WateringVC.swift */,
+				8E6E8C2B2D1E8086008C831B /* WaterSchedule.swift */,
+				8E6E8C2D2D1E81D8008C831B /* WaterCell.swift */,
+			);
+			path = Watering;
+			sourceTree = "<group>";
+		};
+		8E9ABDDD2CE25B7500282246 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				8E9ABDDE2CE25B9400282246 /* SettingVC.swift */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		8E9ABDE02CE25D3700282246 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				8E9ABDE12CE25D4600282246 /* ProfileVC.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		8E9ABDE32CE267DC00282246 /* Card */ = {
+			isa = PBXGroup;
+			children = (
+				8EAABDCC2CE6580D000A9775 /* TemperatureCard */,
+				8E9ABDF02CE3CDA200282246 /* AmountWaterCard */,
+				8E9ABDED2CE3CD8600282246 /* MoistureCard */,
+				8E9ABDEA2CE3C9BE00282246 /* HumidityCard */,
+				8E9ABDE42CE2681D00282246 /* HealthCard */,
+			);
+			path = Card;
+			sourceTree = "<group>";
+		};
+		8E9ABDE42CE2681D00282246 /* HealthCard */ = {
+			isa = PBXGroup;
+			children = (
+				8E9ABDE52CE2684800282246 /* HealthCard.swift */,
+			);
+			path = HealthCard;
+			sourceTree = "<group>";
+		};
+		8E9ABDEA2CE3C9BE00282246 /* HumidityCard */ = {
+			isa = PBXGroup;
+			children = (
+				8E9ABDEB2CE3C9CD00282246 /* HumidityCard.swift */,
+			);
+			path = HumidityCard;
+			sourceTree = "<group>";
+		};
+		8E9ABDED2CE3CD8600282246 /* MoistureCard */ = {
+			isa = PBXGroup;
+			children = (
+				8E9ABDEE2CE3CD9200282246 /* WaterCard.swift */,
+			);
+			path = MoistureCard;
+			sourceTree = "<group>";
+		};
+		8E9ABDF02CE3CDA200282246 /* AmountWaterCard */ = {
+			isa = PBXGroup;
+			children = (
+				8E9ABDF12CE3CDC200282246 /* AmountWaterCard.swift */,
+			);
+			path = AmountWaterCard;
+			sourceTree = "<group>";
+		};
+		8EAABDCC2CE6580D000A9775 /* TemperatureCard */ = {
+			isa = PBXGroup;
+			children = (
+				8EAABDCD2CE6581D000A9775 /* TemperatureCard.swift */,
+			);
+			path = TemperatureCard;
+			sourceTree = "<group>";
+		};
+		8EABD6172CDFCBCD00DA4FF4 /* TerrariumDashboard */ = {
+			isa = PBXGroup;
+			children = (
+				8EABD6182CDFCBF100DA4FF4 /* TerrariumDashboardVC.swift */,
+			);
+			path = TerrariumDashboard;
+			sourceTree = "<group>";
+		};
+		8EAC06252CD7396A006DC034 = {
+			isa = PBXGroup;
+			children = (
+				8EAC06302CD7396A006DC034 /* SmartTerrarium */,
+				8EAC06472CD7396B006DC034 /* SmartTerrariumTests */,
+				8EAC06512CD7396B006DC034 /* SmartTerrariumUITests */,
+				8EAC062F2CD7396A006DC034 /* Products */,
+				8E6E8C3A2D2057A0008C831B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		8EAC062F2CD7396A006DC034 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8EAC062E2CD7396A006DC034 /* SmartTerrarium.app */,
+				8EAC06442CD7396B006DC034 /* SmartTerrariumTests.xctest */,
+				8EAC064E2CD7396B006DC034 /* SmartTerrariumUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8EAC06302CD7396A006DC034 /* SmartTerrarium */ = {
+			isa = PBXGroup;
+			children = (
+				8E6E8C462D2195F1008C831B /* StatusManager */,
+				8E149A642D067EB6009DA208 /* NetworkingManager */,
+				8EAC06722CD78AB1006DC034 /* UtilKits */,
+				8EAC06612CD78690006DC034 /* Controllers */,
+				8EAC06652CD78723006DC034 /* CustomViews */,
+				8EAC06312CD7396A006DC034 /* AppDelegate.swift */,
+				8EAC06332CD7396A006DC034 /* SceneDelegate.swift */,
+				8EAC06352CD7396A006DC034 /* ViewController.swift */,
+				8EAC063A2CD7396B006DC034 /* Assets.xcassets */,
+				8EAC063C2CD7396B006DC034 /* LaunchScreen.storyboard */,
+				8EAC063F2CD7396B006DC034 /* Info.plist */,
+			);
+			path = SmartTerrarium;
+			sourceTree = "<group>";
+		};
+		8EAC06472CD7396B006DC034 /* SmartTerrariumTests */ = {
+			isa = PBXGroup;
+			children = (
+				8EAC06482CD7396B006DC034 /* SmartTerrariumTests.swift */,
+			);
+			path = SmartTerrariumTests;
+			sourceTree = "<group>";
+		};
+		8EAC06512CD7396B006DC034 /* SmartTerrariumUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8EAC06522CD7396B006DC034 /* SmartTerrariumUITests.swift */,
+				8EAC06542CD7396B006DC034 /* SmartTerrariumUITestsLaunchTests.swift */,
+			);
+			path = SmartTerrariumUITests;
+			sourceTree = "<group>";
+		};
+		8EAC06612CD78690006DC034 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8E6E8C2F2D1E8EE1008C831B /* Fan */,
+				8E9ABDE02CE25D3700282246 /* Profile */,
+				8E9ABDDD2CE25B7500282246 /* Setting */,
+				8E9ABDDA2CE2567100282246 /* Watering */,
+				8E9ABDD72CE2553A00282246 /* MainTabBar */,
+				8EABD6172CDFCBCD00DA4FF4 /* TerrariumDashboard */,
+				8EAC06622CD7869F006DC034 /* Login */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		8EAC06622CD7869F006DC034 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				8EAC06632CD786AE006DC034 /* LoginVC.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		8EAC06652CD78723006DC034 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				8E9ABDE32CE267DC00282246 /* Card */,
+				8EAC066F2CD78A2A006DC034 /* Label */,
+				8EAC066A2CD787E6006DC034 /* TextField */,
+				8EAC06662CD787AF006DC034 /* Button */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		8EAC06662CD787AF006DC034 /* Button */ = {
+			isa = PBXGroup;
+			children = (
+				8EAC06682CD787C8006DC034 /* EButton.swift */,
+				8EAC06782CD78BE7006DC034 /* ChangeMobileButton.swift */,
+				8EAABDCF2CE730D6000A9775 /* WateringButton.swift */,
+			);
+			path = Button;
+			sourceTree = "<group>";
+		};
+		8EAC066A2CD787E6006DC034 /* TextField */ = {
+			isa = PBXGroup;
+			children = (
+				8EAC066B2CD787F7006DC034 /* UsernameTextField.swift */,
+				8EAC066D2CD78806006DC034 /* PasswordTextField.swift */,
+			);
+			path = TextField;
+			sourceTree = "<group>";
+		};
+		8EAC066F2CD78A2A006DC034 /* Label */ = {
+			isa = PBXGroup;
+			children = (
+				8EAC06702CD78A3E006DC034 /* CustomLabel1.swift */,
+				8E6E8C442D219528008C831B /* KeepAliveStatusLabel.swift */,
+			);
+			path = Label;
+			sourceTree = "<group>";
+		};
+		8EAC06722CD78AB1006DC034 /* UtilKits */ = {
+			isa = PBXGroup;
+			children = (
+				8EAC06752CD78B0E006DC034 /* Extension */,
+				8EAC06762CD78B27006DC034 /* Constants.swift */,
+				8EAC067A2CD78C09006DC034 /* Strings.swift */,
+				8E6E8C362D1FAEA0008C831B /* AppError.swift */,
+				8E6E8C382D1FAEEE008C831B /* HTTPMethod.swift */,
+			);
+			path = UtilKits;
+			sourceTree = "<group>";
+		};
+		8EAC06752CD78B0E006DC034 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				8EAC06732CD78AC3006DC034 /* + UIView.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8EAC062D2CD7396A006DC034 /* SmartTerrarium */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8EAC06582CD7396B006DC034 /* Build configuration list for PBXNativeTarget "SmartTerrarium" */;
+			buildPhases = (
+				8EAC062A2CD7396A006DC034 /* Sources */,
+				8EAC062B2CD7396A006DC034 /* Frameworks */,
+				8EAC062C2CD7396A006DC034 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SmartTerrarium;
+			packageProductDependencies = (
+				8E6E8C422D206081008C831B /* DGCharts */,
+			);
+			productName = SmartTerrarium;
+			productReference = 8EAC062E2CD7396A006DC034 /* SmartTerrarium.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8EAC06432CD7396B006DC034 /* SmartTerrariumTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8EAC065B2CD7396B006DC034 /* Build configuration list for PBXNativeTarget "SmartTerrariumTests" */;
+			buildPhases = (
+				8EAC06402CD7396B006DC034 /* Sources */,
+				8EAC06412CD7396B006DC034 /* Frameworks */,
+				8EAC06422CD7396B006DC034 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8EAC06462CD7396B006DC034 /* PBXTargetDependency */,
+			);
+			name = SmartTerrariumTests;
+			productName = SmartTerrariumTests;
+			productReference = 8EAC06442CD7396B006DC034 /* SmartTerrariumTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8EAC064D2CD7396B006DC034 /* SmartTerrariumUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8EAC065E2CD7396B006DC034 /* Build configuration list for PBXNativeTarget "SmartTerrariumUITests" */;
+			buildPhases = (
+				8EAC064A2CD7396B006DC034 /* Sources */,
+				8EAC064B2CD7396B006DC034 /* Frameworks */,
+				8EAC064C2CD7396B006DC034 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8EAC06502CD7396B006DC034 /* PBXTargetDependency */,
+			);
+			name = SmartTerrariumUITests;
+			productName = SmartTerrariumUITests;
+			productReference = 8EAC064E2CD7396B006DC034 /* SmartTerrariumUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8EAC06262CD7396A006DC034 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					8EAC062D2CD7396A006DC034 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					8EAC06432CD7396B006DC034 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 8EAC062D2CD7396A006DC034;
+					};
+					8EAC064D2CD7396B006DC034 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 8EAC062D2CD7396A006DC034;
+					};
+				};
+			};
+			buildConfigurationList = 8EAC06292CD7396A006DC034 /* Build configuration list for PBXProject "SmartTerrarium" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8EAC06252CD7396A006DC034;
+			packageReferences = (
+				8E6E8C412D206081008C831B /* XCRemoteSwiftPackageReference "Charts" */,
+			);
+			productRefGroup = 8EAC062F2CD7396A006DC034 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8EAC062D2CD7396A006DC034 /* SmartTerrarium */,
+				8EAC06432CD7396B006DC034 /* SmartTerrariumTests */,
+				8EAC064D2CD7396B006DC034 /* SmartTerrariumUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8EAC062C2CD7396A006DC034 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8EAC063E2CD7396B006DC034 /* LaunchScreen.storyboard in Resources */,
+				8EAC063B2CD7396B006DC034 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8EAC06422CD7396B006DC034 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8EAC064C2CD7396B006DC034 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8EAC062A2CD7396A006DC034 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E9ABDDC2CE2568900282246 /* WateringVC.swift in Sources */,
+				8E6E8C482D2195FD008C831B /* StatusManager.swift in Sources */,
+				8E9ABDDF2CE25B9400282246 /* SettingVC.swift in Sources */,
+				8E6E8C372D1FAEA0008C831B /* AppError.swift in Sources */,
+				8E6E8C2C2D1E8086008C831B /* WaterSchedule.swift in Sources */,
+				8E6E8C312D1E8F0A008C831B /* FanVC.swift in Sources */,
+				8EAABDCE2CE6581D000A9775 /* TemperatureCard.swift in Sources */,
+				8EAC06692CD787C8006DC034 /* EButton.swift in Sources */,
+				8EABD6192CDFCBF100DA4FF4 /* TerrariumDashboardVC.swift in Sources */,
+				8EAC06712CD78A3E006DC034 /* CustomLabel1.swift in Sources */,
+				8E6E8C352D1FAC44008C831B /* User.swift in Sources */,
+				8E6E8C2E2D1E81D8008C831B /* WaterCell.swift in Sources */,
+				8E9ABDD92CE2554B00282246 /* MainTabBarVC.swift in Sources */,
+				8EAC06362CD7396A006DC034 /* ViewController.swift in Sources */,
+				8E9ABDEC2CE3C9CD00282246 /* HumidityCard.swift in Sources */,
+				8EAC06742CD78AC3006DC034 /* + UIView.swift in Sources */,
+				8E6E8C452D219528008C831B /* KeepAliveStatusLabel.swift in Sources */,
+				8E9ABDEF2CE3CD9200282246 /* WaterCard.swift in Sources */,
+				8EAC066E2CD78806006DC034 /* PasswordTextField.swift in Sources */,
+				8EAC06792CD78BE7006DC034 /* ChangeMobileButton.swift in Sources */,
+				8EAC06772CD78B27006DC034 /* Constants.swift in Sources */,
+				8E149A672D067F08009DA208 /* BackendAPI.swift in Sources */,
+				8E6E8C392D1FAEEE008C831B /* HTTPMethod.swift in Sources */,
+				8EAC06322CD7396A006DC034 /* AppDelegate.swift in Sources */,
+				8EAC06642CD786AE006DC034 /* LoginVC.swift in Sources */,
+				8E9ABDE22CE25D4600282246 /* ProfileVC.swift in Sources */,
+				8E9ABDF22CE3CDC200282246 /* AmountWaterCard.swift in Sources */,
+				8EAC06342CD7396A006DC034 /* SceneDelegate.swift in Sources */,
+				8EAC067B2CD78C09006DC034 /* Strings.swift in Sources */,
+				8EAC066C2CD787F7006DC034 /* UsernameTextField.swift in Sources */,
+				8EAABDD02CE730D6000A9775 /* WateringButton.swift in Sources */,
+				8E9ABDE62CE2684800282246 /* HealthCard.swift in Sources */,
+				8E6E8C332D1FABFF008C831B /* Networking.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8EAC06402CD7396B006DC034 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8EAC06492CD7396B006DC034 /* SmartTerrariumTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8EAC064A2CD7396B006DC034 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8EAC06552CD7396B006DC034 /* SmartTerrariumUITestsLaunchTests.swift in Sources */,
+				8EAC06532CD7396B006DC034 /* SmartTerrariumUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8EAC06462CD7396B006DC034 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8EAC062D2CD7396A006DC034 /* SmartTerrarium */;
+			targetProxy = 8EAC06452CD7396B006DC034 /* PBXContainerItemProxy */;
+		};
+		8EAC06502CD7396B006DC034 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8EAC062D2CD7396A006DC034 /* SmartTerrarium */;
+			targetProxy = 8EAC064F2CD7396B006DC034 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8EAC063C2CD7396B006DC034 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8EAC063D2CD7396B006DC034 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8EAC06562CD7396B006DC034 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8EAC06572CD7396B006DC034 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8EAC06592CD7396B006DC034 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SmartTerrarium/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = vn.dsoft.SmartTerrarium;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8EAC065A2CD7396B006DC034 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SmartTerrarium/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = vn.dsoft.SmartTerrarium;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		8EAC065C2CD7396B006DC034 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = vn.dsoft.SmartTerrariumTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SmartTerrarium.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SmartTerrarium";
+			};
+			name = Debug;
+		};
+		8EAC065D2CD7396B006DC034 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = vn.dsoft.SmartTerrariumTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SmartTerrarium.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SmartTerrarium";
+			};
+			name = Release;
+		};
+		8EAC065F2CD7396B006DC034 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = vn.dsoft.SmartTerrariumUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SmartTerrarium;
+			};
+			name = Debug;
+		};
+		8EAC06602CD7396B006DC034 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = vn.dsoft.SmartTerrariumUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SmartTerrarium;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8EAC06292CD7396A006DC034 /* Build configuration list for PBXProject "SmartTerrarium" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8EAC06562CD7396B006DC034 /* Debug */,
+				8EAC06572CD7396B006DC034 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8EAC06582CD7396B006DC034 /* Build configuration list for PBXNativeTarget "SmartTerrarium" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8EAC06592CD7396B006DC034 /* Debug */,
+				8EAC065A2CD7396B006DC034 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8EAC065B2CD7396B006DC034 /* Build configuration list for PBXNativeTarget "SmartTerrariumTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8EAC065C2CD7396B006DC034 /* Debug */,
+				8EAC065D2CD7396B006DC034 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8EAC065E2CD7396B006DC034 /* Build configuration list for PBXNativeTarget "SmartTerrariumUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8EAC065F2CD7396B006DC034 /* Debug */,
+				8EAC06602CD7396B006DC034 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8E6E8C412D206081008C831B /* XCRemoteSwiftPackageReference "Charts" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/danielgindi/Charts";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8E6E8C422D206081008C831B /* DGCharts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8E6E8C412D206081008C831B /* XCRemoteSwiftPackageReference "Charts" */;
+			productName = DGCharts;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 8EAC06262CD7396A006DC034 /* Project object */;
+}
